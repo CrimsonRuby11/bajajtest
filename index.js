@@ -4,7 +4,7 @@ const express = require('express');
 const bfhlRoutes = require('./routes/bfhl_routes');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
