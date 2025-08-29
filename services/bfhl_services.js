@@ -15,9 +15,9 @@ function processData(data) {
             sum += num;
 
             if (num % 2 == 0) {
-                even_numbers.push(num);
+                even_numbers.push(num.toString());
             } else {
-                odd_numbers.push(num);
+                odd_numbers.push(num.toString());
             }
         }
 
@@ -51,7 +51,7 @@ function processData(data) {
         even_numbers,
         alphabets,
         specialchars,
-        sum,
+        sum: sum.toString(),
         concatstring
     }
 }
